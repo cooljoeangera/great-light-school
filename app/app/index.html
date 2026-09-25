@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Light Model School | Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --green:#1A6B3C;
+      --green-dark:#10472a;
+      --green-light:#eaf5ee;
+      --yellow:#F5C518;
+      --cream:#fffdf5;
+      --bg:#f4f7f5;
+      --white:#ffffff;
+      --text:#183b2a;
+      --muted:#718078;
+      --border:#e1e9e4;
+      --red:#c83c3c;
+      --orange:#d88916;
+      --shadow:0 8px 30px rgba(15,54,33,.08);
+      --radius:16px;
+    }
+
+    *{box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,Arial,sans-serif;
+    }
+
+    button,input,select,textarea{
+      font:inherit;
+    }
+
+    button{
+      cursor:pointer;
+    }
+
+    .hidden{
+      display:none!important;
+    }
+
+    /* LOGIN */
+
+    #loginScreen{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:25px;
+      background:
+        radial-gradient(circle at top right,rgba(245,197,24,.25),transparent 30%),
+        linear-gradient(135deg,#0f482b,#1a6b3c);
+    }
+
+    .login-shell{
+      width:min(1050px,100%);
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      background:white;
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:0 30px 80px rgba(0,0,0,.25);
+    }
+
+    .login-brand{
+      padding:55px;
+      color:white;
+      background:
+        linear-gradient(rgba(16,71,42,.88),rgba(26,107,60,.95)),
+        radial-gradient(circle at 20% 20%,#f5c518,transparent 25%);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .crest{
+      width:72px;
+      height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--yellow);
+      color:var(--green-dark);
+      border-radius:20px;
+      font-size:24px;
+      font-weight:900;
+      margin-bottom:25px;
+    }
+
+    .login-brand h1{
+      font-family:"DM Serif Display",serif;
+      font-size:48px;
+      line-height:1.05;
+      margin:0 0 15px;
+    }
+
+    .login-brand p{
+      color:#e6f4eb;
+      line-height:1.7;
+      max-width:500px;
+    }
+
+    .login-form{
+      padding:45px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .login-form h2{
+      margin:0 0 7px;
+      font-size:30
